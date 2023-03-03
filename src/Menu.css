@@ -1,0 +1,12 @@
+.menuTop{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    background-color: lightgray;
+    
+}
+.menuTop img:first-child{
+    border-radius: 50%;
+    height: 40px;
+    padding: 5px 10px;
+}

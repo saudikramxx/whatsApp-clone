@@ -1,15 +1,19 @@
 import "./Login.css"
 import React from 'react'
 import { GoogleLogin } from '@react-oauth/google';
-
+import jwt_decode from "jwt-decode";
+import { useContext } from "react";
+import {AccountContext} from "./Accountprovider";
 export default function Login() {
-    const LoginSuccess = () =>{
-      console.log("success")
+   const {SetUser} = useContext(AccountContext)
+    const LoginSuccess = (res) =>{
+      const credential = jwt_decode(res.credential)
+      SetUser(credential);
     }
-    const LoginError = () => {
-       console.log("login failed")
+    const LoginError = (res) => {
+       console.log("login failed" , res)
     }
-  return (
+  return ( 
     <div className= "login">
        <div className = "loginBackground-top">
        <img className="logo" alt="whats-app" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/640px-WhatsApp.svg.png"/>
@@ -45,6 +49,6 @@ export default function Login() {
 
        
         
-    </div>
+    </div> 
   )
 }
