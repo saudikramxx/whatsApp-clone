@@ -1,10 +1,10 @@
 import React from 'react'
-import Login from './Login'
-import { useContext } from 'react'
+//import Login from './Login'
+//import { useContext } from 'react'
 import Chats from './Chats'
-import { AccountContext } from './Accountprovider'
+// import { AccountContext } from './Accountprovider'
 function Home() {
-const {user} = useContext(AccountContext)
+// const {user} = useContext(AccountContext)
   return (
     <div>
     <Chats/>

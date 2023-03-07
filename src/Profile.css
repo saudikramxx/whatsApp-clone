@@ -1,0 +1,77 @@
+.leftDrawer{
+    position: absolute;
+    top: 0%;
+    width: 31%;
+    height: 100%;
+    z-index: 6;
+    background-color: #f0f2f5;
+}
+
+.header{
+    display: flex;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    align-items:end;
+    height: 15%;
+    color: white;
+    background-color:#008069;
+}
+
+.header p {
+    padding-left: 25px;
+    padding-bottom: 7px;
+    font-size: larger;
+    font-weight:500;
+}
+
+.imageDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+    
+}
+
+#img{
+    border-radius: 100px;
+    height: 200px;
+}
+
+.email{
+    height: 12%;
+    background-color: white;
+    
+}
+
+.email h4{
+    padding: 6px 1px 15px 35px;
+    font-weight: 450;
+    color: #008069;
+}
+.email p{
+    padding: 0px 0px 10px 35px;
+}
+
+.defaultText{
+    height: 9%;
+    padding: 12px 30px 5px 35px;
+    
+}
+
+.defaultText h4{
+    font-weight: 100;
+}
+
+.About{
+    background-color: white;
+}
+
+.About h4{
+    padding: 6px 1px 15px 35px;
+        font-weight: 450;
+        color: #008069;
+    }
+.About p{
+    padding: 0px 0px 10px 35px;
+    font-weight: 350;
+}

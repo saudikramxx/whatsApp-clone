@@ -1,12 +1,85 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+    
+}
 .menuTop{
     display: flex;
     flex-direction: row;
+    
+    border-right: 1px solid lightgray;
     height: 50px;
-    background-color: lightgray;
+    width: 322%;
+    background-color:#f0f2f5 ;
     
 }
 .menuTop img:first-child{
+    display: flex;
     border-radius: 50%;
     height: 40px;
     padding: 5px 10px;
 }
+
+.icons{
+    display: flex;    
+    height: 180;
+    padding: 15px 150px;
+}
+
+.icons :first-child{
+    padding-right: 20px;
+    color: gray;
+}
+
+.icons :nth-child(2) {
+    padding-right: 20px;
+    color: gray;
+}
+
+.icons :nth-child(3) {
+    padding-right: 20px;
+    color: gray;
+}
+
+.icons :nth-child(4) {
+    padding-right: 20px;
+    color: gray;
+}
+
+.serch{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 322%;
+    height: 40px;
+    border-bottom: 1px solid #f0f2f5;
+}
+.serch :first-child{
+    position: absolute;
+    z-index: 0;
+    height: 20px;
+    width: 20px;
+    left: 20px    
+}
+.serch :nth-child(3){
+    position: absolute;
+    right: 5px;
+    color: gray;
+}
+.search-box input[type="text"]{
+    position: absolute;
+    z-index: -1;
+    top:5px;
+    left:-2px;
+    margin-left: 15px;
+    height: 25px;;
+    width: 360px;
+    background-color:#f0f2f5;
+    border:1px solid #f0f2f5;
+    border-radius: 5px;
+}
+.search-box input[type="text"]::placeholder{
+    text-align: center;
+}
+
